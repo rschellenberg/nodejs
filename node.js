@@ -8,6 +8,6 @@ const server = createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain');
   res.end(`${host}:${port}/`);
 });
-//server.listen(port, host, () => {
-//  console.log(`Server running at http://${host}:${port}/`);
-//});
+server.listen(port, host, () => {
+  console.log(`Server running at http://${host}:${port}/`);
+});
