@@ -3,7 +3,7 @@ services:
   web:
     image: rschellenberg/nodejs
     container_name: ppsre-app-ecr-repo
-    env_file: .env
+    env_file:  .env
     restart: always
     build:
       context: .
